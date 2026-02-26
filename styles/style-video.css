@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(../fonts/Norse-Bold.otf);
+}
+
+h1 {
+    font-family: Norse-Bold, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left{
+    background-image: url('../images/ferns.jpg');
+    width: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Norse-Bold, sans-serif;
+    
+}
+
+
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    width: 65vw;
+}
+
+.first{
+    height: 33vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+}
+
+.second{
+    height: 34vh;
+    background-color: white;
+
+}
+
+.form-main-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 200px;
+    border: 1px solid #E5E7Eb;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.third{
+    height: 33vh;
+}
