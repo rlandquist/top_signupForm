@@ -1,35 +1,33 @@
 @font-face {
-    font-family: Norse-Bold;
-    src: url(../fonts/Norse-Bold.otf);
+  font-family: Norse-Bold;
+  src: url(../fonts/Norse-Bold.otf);
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
 }
 
-main {
- 
-  
-}
 
 /* Sign-up form component */
 .component {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Image sidebar */
 .sidebar {
   flex: 1;
   background-image: url('../images/ferns.jpg');
-   justify-content: space-between;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   padding-top: 10rem;
-   background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -37,22 +35,121 @@ main {
   background-color: rgb(43 43 43 / 70%);
   align-items: center;
   justify-content: center;
-  height:6rem ;
+  height: 6rem;
 
 }
 
 .title img {
   height: 5rem;
-  
+
 }
 
 .title h1 {
   font-family: "Norse-Bold";
   font-size: 4rem;
-  color: white; 
+  color: white;
 }
 
+.image-attribution {
+  color: lightgray;
+  font-size: 0.75rem;
+  /* 0.75 * 16px = 12px */
+  text-align: center;
+  margin: 0.75rem;
+  align-items: flex-end;
+}
 
-.main-content{
-    flex: 2;
+.image-attribution a {
+  color: inherit;
+}
+
+.main-content {
+  flex: 2;
+  background-color: whitesmoke;
+}
+
+/* Section: Sales pitch */
+.sales-pitch {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 5rem 2.5rem 1.5rem 2.5rem;
+}
+
+.sales-pitch p {
+  max-width: 33rem;
+  margin-bottom: 1rem;
+}
+
+/* Section: Sign up */
+.sign-up {
+  background-color: white;
+  padding: 1.5rem 0 2.5rem 2.5rem;
+  box-shadow: 0px 4px 4px #dedede;
+}
+
+.sign-up h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.form-controls {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-controls li {
+  margin-right: 3rem;
+  margin-top: 1.25rem;
+}
+
+.form-controls label {
+  display: block;
+  /* 0.75 * 16px = 12px */
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0.125rem;
+}
+
+.form-controls input {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  width: 14rem;
+}
+
+.form-controls input:invalid {
+  background: white;
+  border: 1px solid red;
+}
+
+.form-controls input:focus {
+  border: 1px solid blue;
+  box-shadow: 4px 4px 4px #dedede;
+  outline: none;
+}
+
+/* Section: Submit form */
+.submit-form {
+  /* 0.875 x 16px = 14px */
+  font-size: 0.875rem;
+  padding: 2.5rem 2.5rem 5rem;
+}
+
+.submit-form input {
+  font-weight: 700;
+  color: white;
+  background-color: #596d48;
+  padding: 0.75em 2.5em;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px #dedede;
+  margin-bottom: 1rem;
+}
+
+.submit-form a {
+  color: #596d48;
+  font-weight: 700;
 }
